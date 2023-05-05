@@ -48,7 +48,10 @@ public class Snack5 {
 			}
 		}
 		int media = sum / input;
-		int DispMedia = OddSum / k;
+		int DispMedia = 0;
+		if(OddSum > 0) {
+			DispMedia = OddSum / k;
+		}
 		
 		System.out.println("-----------------------");
 		System.out.println("La somma è: " + sum);
