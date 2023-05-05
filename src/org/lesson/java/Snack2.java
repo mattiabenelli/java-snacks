@@ -20,11 +20,11 @@ public class Snack2 {
 			    "cognome 5",
 			};
 		
+		Random r = new Random();
 		for(int i=0; i<10; i++) {
 			
-			Random r = new Random();
-			int random1 = r.nextInt(0, names.length - 1);
-			int random2 = r.nextInt(0, surnames.length - 1);
+			int random1 = r.nextInt(0, names.length);
+			int random2 = r.nextInt(0, surnames.length);
 			
 			System.out.println("Invitato " + i + ": " + names[random1]+ " " + surnames[random2]);
 		}
